@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+$bodyBgc: hsl(218, 23%, 16%);
+$cardBcg: hsl(217, 19%, 38%);
+$primaryText: hsl(193, 38%, 86%);
+$secondaryText: hsl(150, 100%, 66%);
+
+body {
+  font-family: "Manrope", serif;
+  background-color: $bodyBgc;
+  color: $primaryText;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
