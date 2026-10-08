@@ -1,3 +1,9 @@
+import { AdviceCard } from "./components/AdviceCard/AdviceCard";
+
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <AdviceCard />
+    </>
+  );
 };

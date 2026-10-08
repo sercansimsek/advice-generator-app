@@ -1,9 +1,12 @@
+@use "./variables" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-$bodyBgc: hsl(218, 23%, 16%);
-$cardBcg: hsl(217, 19%, 38%);
-$primaryText: hsl(193, 38%, 86%);
-$secondaryText: hsl(150, 100%, 66%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Manrope", serif;
