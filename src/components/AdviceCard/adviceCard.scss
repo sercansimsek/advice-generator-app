@@ -7,14 +7,11 @@
   align-items: center;
   gap: 1.2rem;
 
-  padding: 1rem;
+  padding: 2.5rem 2rem 3.5rem;
   position: relative;
-  padding-bottom: 3.2rem;
 
   background-color: $cardBcg;
-  max-width: 375px;
-  height: max-content;
-
+  width: min(100%, 33.75rem);
   border-radius: 10px;
 
   .Card-index {
@@ -27,12 +24,14 @@
 
   .Card-text {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .Card-seperator {
-    height: 1rem;
-    width: max-content;
+    display: block;
+    width: 100%;
+    max-width: 18.4375rem;
+    height: auto;
   }
 
   .Card-btn {
@@ -49,9 +48,33 @@
     background-color: $secondaryText;
     cursor: pointer;
 
+    transition:
+      box-shadow 180ms ease,
+      transform 120ms ease;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow:
+        0 0 0.75rem rgba(83, 255, 170, 0.75),
+        0 0 1.5rem rgba(83, 255, 170, 0.4);
+    }
+
+    &:active {
+      transform: translate(-50%, 50%) scale(0.95);
+      box-shadow: 0 0 0.5rem rgba(83, 255, 170, 0.6);
+    }
+
     img {
       width: 24px;
       height: 24px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 2rem 1.5rem 3.5rem;
+
+    .Card-text {
+      font-size: 1.25rem;
     }
   }
 }
