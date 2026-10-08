@@ -1,18 +1,25 @@
 import "./adviceCard.scss";
 import seperator from "/src/assets/images/pattern-divider-mobile.svg";
 import dice from "/src/assets/images/icon-dice.svg";
+import type { Advice } from "../../App";
 
-export const AdviceCard = () => {
+type Props = {
+  advice: Advice;
+  onRefresh: () => void;
+};
+
+export const AdviceCard = ({ advice, onRefresh }: Props) => {
   return (
     <div className="Card">
-      <span className="Card-index">Advice #117</span>
-      <p className="Card-text">
-        “It is easy to sit up and take notice, what's difficult is getting up
-        and taking action.”
-      </p>
+      <span className="Card-index">{`Advice #${advice.id}`}</span>
+      <p className="Card-text">{advice.advice}</p>
       <img className="Card-seperator" src={seperator} alt="seperator" />
-      <button className="Card-btn">
-        <img src={dice} alt="dice" />
+      <button
+        className="Card-btn"
+        onClick={onRefresh}
+        aria-label="Get new advice"
+      >
+        <img src={dice} alt="" />
       </button>
     </div>
   );
