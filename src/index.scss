@@ -1,7 +1,5 @@
 @use "./variables" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +12,7 @@
 }
 
 body {
-  font-family: "Manrope", serif;
+  font-family: "Manrope", sans-serif;
   background-color: $bodyBgc;
   color: $primaryText;
   font-weight: bold;

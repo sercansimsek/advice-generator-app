@@ -13,7 +13,7 @@ export const AdviceCard = ({ advice, onRefresh }: Props) => {
     <div className="Card">
       <span className="Card-index">{`Advice #${advice.id}`}</span>
       <p className="Card-text">{advice.advice}</p>
-      <img className="Card-seperator" src={seperator} alt="seperator" />
+      <img className="Card-separator" src={seperator} alt="seperator" />
       <button
         className="Card-btn"
         onClick={onRefresh}
